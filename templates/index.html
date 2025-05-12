@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Fire Detection System{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h1>Real-time Fire Detection System</h1>
+    <div id="video-container">
+        <img id="video-feed" src="{{ url_for('video_feed') }}" alt="Video Feed">
+    </div>
+    <div id="status" class="status no-fire">No Fire Detected</div>
+</div>
+{% endblock %}
